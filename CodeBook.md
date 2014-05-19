@@ -18,7 +18,7 @@ completeData.X (data.frame): Merge of training and test sets
 
 completeData.Y (data.frame): Merge of training and test labels
 
-completeData.subject (data.frame): Subject who performed the activity [1 - 30] (train and test sets together)
+completeData.subject (data.frame): Subject who performed the activity. It´s range is from 1 to 30 (train and test sets together)
 
 features (data.frame): The features obtained by calculating variables from the time and frequency domain
 
