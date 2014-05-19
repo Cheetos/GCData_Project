@@ -5,8 +5,11 @@ description of variables
 ------------------------
 
 trainData.X (data.frame): Training set
+
 trainData.Y (data.frame): Training labels
+
 testData.X (data.frame): Test set
+
 testData.Y (data.frame): Test labels
 trainData.subject/testData.subject (data.frame): Subject who performed the activity [1 - 30]
 completeData.X (data.frame): Merge of training and test sets
