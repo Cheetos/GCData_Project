@@ -12,7 +12,7 @@ testData.X (data.frame): Test set
 
 testData.Y (data.frame): Test labels
 
-trainData.subject/testData.subject (data.frame): Subject who performed the activity [1 - 30]
+trainData.subject/testData.subject (data.frame): Subject who performed the activity. It´s range is from 1 to 30
 
 completeData.X (data.frame): Merge of training and test sets
 
