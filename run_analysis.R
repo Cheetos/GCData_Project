@@ -52,7 +52,7 @@ splitData <- split(selData,list(selData$activity, selData$subject))
 meanVector <- lapply(splitData[[1]][1:m],mean)
 RES <- data.frame(meanVector,activity=splitData[[1]][[m+1]][1], subject=splitData[[1]][[m+2]][1])
 
-for(i in 2:length(s))
+for(i in 2:length(splitData))
 {
     meanVector <- lapply(splitData[[i]][1:m],mean)
     newRow <- data.frame(meanVector,activity=splitData[[i]][[m+1]][1], subject=splitData[[i]][[m+2]][1])
@@ -61,5 +61,6 @@ for(i in 2:length(s))
 
 colnames(RES)[1:m] <- paste(colnames(RES)[1:m],rep("mean",m))
 
-write.table(RES,file="myData.txt",col.names=FALSE, row.names=FALSE)
+write.table(RES,file="myData.txt",col.names=TRUE, row.names=FALSE)
 
+#resultData <- read.table("myData.txt", header=TRUE)
