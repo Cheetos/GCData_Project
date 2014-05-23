@@ -331,4 +331,3 @@ description of variables
 * subject
     * Subject ID. Person who performed the action
     * $1 \cdots 30$
-    
